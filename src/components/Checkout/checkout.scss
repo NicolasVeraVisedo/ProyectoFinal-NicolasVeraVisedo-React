@@ -1,0 +1,129 @@
+.checkout {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding: 20px;
+
+  .form-checkout {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    label {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      transition: border-color 0.3s;
+
+      &:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+    }
+
+    .button-form {
+      background-color: #ff8383;
+      color: rgb(0, 0, 0);
+      font-size: 18px;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s, transform 0.2s;
+
+      &:hover {
+        background-color: #ff0000;
+        color: white;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  .order-completed {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #28a745;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .order-details {
+      margin-bottom: 20px;
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 10px;
+
+        img {
+          border-radius: 5px;
+          object-fit: cover;
+        }
+
+        p {
+          margin: 0;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .button-back-home {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: rgb(19, 19, 19);
+      border: none;
+      color: white;
+      width: 200px;
+      border-radius: 5px;
+      border: 2px solid rgb(93, 93, 93);
+      font-size: 20px;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+
+      &:hover {
+        background-color: rgb(255, 95, 95);
+        border-color: rgb(255, 0, 0);
+        color: #fff;
+      }
+    }
+  }
+}

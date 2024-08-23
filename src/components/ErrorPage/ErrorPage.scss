@@ -1,0 +1,42 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 81vh;
+  margin-top: 100px;
+  text-align: center;
+  color: #333;
+
+  h1 {
+    font-size: 72px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+
+  .err {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff0000;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-color: #000000;
+      color: #ff0000;
+      transform: scale(1.05);
+    }
+  }
+}

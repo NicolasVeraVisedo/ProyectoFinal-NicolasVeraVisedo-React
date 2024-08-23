@@ -1,0 +1,66 @@
+.item-detail {
+  width: 100%;
+  min-height: 95vh;
+  display: flex;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  color: white;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.767);
+  border-radius: 0px 200px 200px 0px;
+
+  .image-detail {
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0px 1px 24px 12px rgba(255, 0, 0, 0.767);
+    img {
+      width: 60%;
+    }
+  }
+  .content-detail {
+    width: 75%;
+    padding: 0 20px;
+    margin-top: 200px;
+    .name-detail {
+      font-size: 35px;
+    }
+    .text-detail {
+      font-size: 20px;
+    }
+    &:hover {
+      height: 100%;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      background-color: rgb(255, 255, 255);
+      color: rgb(255, 0, 0);
+    }
+
+    .button-detail {
+      display: inline-block;
+      text-decoration: none;
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 0, 0);
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      border: 2px solid rgb(255, 0, 0);
+
+      &:hover {
+        background-color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 0, 0);
+      }
+    }
+  }
+}
+
+.reload-2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  z-index: 1000;
+}
